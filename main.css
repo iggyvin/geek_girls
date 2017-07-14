@@ -1,0 +1,212 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, a {
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+    text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ----------- */
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+body {
+	font-family: 'Indie Flower', cursive;
+}
+
+header{
+	background-color: rgb(153,153,153);
+	height: 60px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+#main {
+	display: flex;
+	background-color: rgb(238,238,238);
+}
+
+#main-data {
+	background-color: rgb(211,239,198);
+	width: 30%;
+	margin: 0 20px;
+}
+
+#description {
+	width: 55%;
+}
+
+#motivation {
+	background-color: rgb(153,153,153);
+}
+
+#motivation p {
+	font-size: 22px;
+	margin-top: 15px;
+}
+
+#main-data #photo {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+#main-data img {
+	width: 50%;
+	background-color: rgb(191,119,1);
+	border-radius: 100%;
+	border-top: solid 3px rgb(195,0,3);
+	border-bottom: solid 3px rgb(195,0,3);
+	border-left: solid 3px rgb(195,0,3);
+	border-right: solid 5px rgb(195,0,3);
+}
+
+.names {
+	font-size: 29px;
+	width: 100%;
+}
+
+.input {
+	font-family: 'Indie Flower', cursive;
+	border: none;
+	font-size: 14px;
+	margin: 6px 0;
+}
+
+.input:not(.check) {
+	width: 99%;
+}
+
+.check {
+	width: 95%;
+}
+
+#main-data p:last-of-type, #main-data span:not(:first-child) {
+	margin-top: 10px;
+}
+
+#main-data .input, #main-data p:last-of-type {
+	color: rgb(117,139,101);
+	background-color: rgb(211,239,198);
+}
+
+#main-data .input:first-of-type, #main-data .input:nth-of-type(2) {
+	font-size: 19px;
+}
+
+#description .input {
+	color: rgb(67,67,67);
+	background-color: rgb(238,238,238);
+}
+
+#description textarea {
+	height: 50px;
+}
+
+#motivation .input {
+	background-color: rgb(153,153,153);
+	height: 50px;
+	font-size: 17px;
+}
+
+.title {
+	font-size: 19px;
+	margin-top: 6px;
+	height: 25px;
+	align-items: center;
+	display: flex;
+}
+
+#main-data .title {
+	background-color: rgb(175,209,159);
+	color: rgb(85,94,51);
+}
+
+#main-data .title:first-of-type, #main-data .title:nth-of-type(2) {
+	font-weight: bold;
+}
+
+#description .title {
+	background-color: rgb(221,221,221);
+	color: rgb(70,69,67);
+}
+
+#description .title:first-child {
+	text-transform: uppercase;
+	margin-top: 20px;
+}
+
+/* --- stars --- */
+
+.rating { 
+  	border: none;
+  	float: left;
+	margin-left: 10px;
+}
+
+.rating input { 
+  	display: none; 
+}
+
+.rating label { 
+  	margin: 5px;
+  	font-size: 20px;
+  	display: inline-block;
+}
+
+.rating label { 
+  	color: rgb(156,188,132); 
+ 	float: right;
+}
+
+.rating > input:checked ~ label, .rating:not(:checked) > label:hover, .rating:not(:checked) > label:hover ~ label { 
+  	color: rgb(59,91,34);
+}
